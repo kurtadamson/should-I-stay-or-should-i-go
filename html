@@ -1,12 +1,57 @@
-<!-- My first commit on Github. Just some basic HTML and the "Clash" -->
+<!-- My first commit on Github. Just some basic HTML and the "Clash", this version contains buttons in a dropdown. NOT WORKING -->
 
 <!DOCTYPE html>
 <html>
+<head>
+<meta name="viewport" content='width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+background-color: #4CAF50;
+color: white;
+padding: 16px;
+font-size: 16px;
+border: none;
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: )px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: blcok;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: blcok;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+
 <body>
 
 <h2>Should I stay or should I go now?</h2>
+
+<div class="dropdown">
+<button class="dropbtn">Answer</button>
+<div class="dropdown-content">
 <button type="button" onclick="alert('It will be double!')">Stay?</button>
 <button type="button" onclick="alert('There will be trouble!')">Go?</button>
+ </div>
+ </div>
+ 
  
 </body>
 </html>
